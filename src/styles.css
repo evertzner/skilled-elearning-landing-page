@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+.gradient-pink {
+  @apply bg-gradient-to-b from-[#F02AA6] to-[#FF6F48];
+}
+
+.gradient-purple {
+  @apply bg-gradient-to-b from-[#4851FF] to-[#F02AA6];
+}
+
+.text-preset-1 {
+  @apply font-extrabold text-[56px] leading-[120%];
+}
+
+.text-preset-2 {
+  @apply font-extrabold text-[40px] leading-[120%];
+}
+
+.text-preset-3 {
+  @apply font-extrabold text-[32px] leading-[120%];
+}
+
+.text-preset-4 {
+  @apply font-extrabold text-2xl leading-[120%];
+}
+
+.text-preset-5 {
+  @apply font-medium text-lg leading-normal;
+}
+
+.text-preset-6 {
+  @apply font-bold text-base leading-normal;
+}
+
+.text-preset-7 {
+  @apply font-bold text-lg leading-normal;
+}
+
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
