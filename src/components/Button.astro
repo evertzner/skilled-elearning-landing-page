@@ -1,0 +1,20 @@
+---
+interface Props {
+  variant: 'black' | 'orange' | 'purple';
+  mobile?: boolean;
+}
+
+const { variant, mobile } = Astro.props;
+
+const classes = {
+  base: 'flex justify-center items-center gap-100 rounded-[28px] text-white'
+};
+---
+
+{variant === 'black' && <button class={`${classes.base}`}>black</button>}
+
+{variant === 'orange' && <button>orange</button>}
+
+{variant === 'purple' && <button>purple</button>}
+
+<div class=''></div>
