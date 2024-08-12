@@ -1,15 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <Layout title='Skilled E-learning'>
-  <main class=''>
-    <Button variant='black' />
-    <Button variant='orange' />
-    <Button variant='purple' />
-    <Link />
+  <main class='flex flex-col justify-center items-center'>
+    <Navigation />
+    <Hero />
   </main>
 </Layout>
