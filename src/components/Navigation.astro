@@ -1,0 +1,15 @@
+---
+import LogoDark from '../assets/LogoDark.astro';
+import Button from './Button.astro';
+import LogoDarkBig from '../assets/LogoDarkBig.astro';
+---
+
+<nav class='flex py-200 px-250 self-stretch items-center justify-between'>
+  <div class='contents xl:hidden'>
+    <LogoDark />
+  </div>
+  <div class='hidden xl:contents'>
+    <LogoDarkBig />
+  </div>
+  <Button variant='black' />
+</nav>
