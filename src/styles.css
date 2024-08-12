@@ -38,6 +38,28 @@
   @apply font-bold text-lg leading-normal;
 }
 
+/* Medium screen size (md) and above */
+@media (min-width: 768px) {
+  .md\:text-preset-6 {
+    @apply font-bold text-base leading-normal;
+  }
+
+  .md\:text-preset-7 {
+    @apply font-bold text-lg leading-normal;
+  }
+}
+
+/* Extra-large screen size (xl) and above */
+@media (min-width: 1440px) {
+  .xl\:text-preset-6 {
+    @apply font-bold text-base leading-normal;
+  }
+
+  .xl\:text-preset-7 {
+    @apply font-bold text-lg leading-normal;
+  }
+}
+
 @layer base {
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
