@@ -6,11 +6,15 @@ interface Props {
 const { variant } = Astro.props;
 
 const classes = {
-  base: 'flex justify-center items-center gap-100 rounded-[28px] text-white py-200 px-400 md:py-150 md:px-300 xl:py-200 xl:px-400 text-preset-7 md:text-preset-6 xl:text-preset-7',
-  black: 'bg-blue-900',
-  orange: 'gradient-pink',
-  purple: 'gradient-purple'
+  base: `flex justify-center items-center gap-100 rounded-[28px] text-white 
+        py-200 px-400 md:py-150 md:px-300 xl:py-200 xl:px-400 text-preset-7 
+        md:text-preset-6 xl:text-preset-7 transition duration-500 ease-out`,
+  black: 'bg-blue-900 hover:bg-blue-600',
+  orange: 'gradient-pink hover:opacity-55',
+  purple: 'gradient-purple hover:opacity-55'
 };
 ---
 
 <button class={`${classes.base} ${classes[variant]}`}>Get Started</button>
+
+<div class=''></div>
