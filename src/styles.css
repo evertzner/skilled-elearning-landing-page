@@ -10,20 +10,24 @@
   @apply bg-gradient-to-b from-[#4851FF] to-[#F02AA6];
 }
 
+.gradient-white {
+  @apply bg-gradient-to-b from-[#FFFFFF] to-[#F0F1FF];
+}
+
 .text-preset-1 {
-  @apply font-extrabold text-[56px] leading-[120%];
+  @apply font-extrabold text-[40px] xl:text-[56px] leading-[120%];
 }
 
 .text-preset-2 {
-  @apply font-extrabold text-[40px] leading-[120%];
+  @apply font-extrabold text-[32px] xl:text-[40px] leading-[120%];
 }
 
 .text-preset-3 {
-  @apply font-extrabold text-[32px] leading-[120%];
+  @apply font-extrabold text-2xl xl:text-[32px] leading-[120%];
 }
 
 .text-preset-4 {
-  @apply font-extrabold text-2xl leading-[120%];
+  @apply font-extrabold text-xl xl:text-2xl leading-[120%];
 }
 
 .text-preset-5 {
@@ -31,33 +35,11 @@
 }
 
 .text-preset-6 {
-  @apply font-bold text-base leading-normal;
+  @apply font-bold md:font-medium text-base md:text-lg leading-normal;
 }
 
 .text-preset-7 {
   @apply font-bold text-lg leading-normal;
-}
-
-/* Medium screen size (md) and above */
-@media (min-width: 768px) {
-  .md\:text-preset-6 {
-    @apply font-bold text-base leading-normal;
-  }
-
-  .md\:text-preset-7 {
-    @apply font-bold text-lg leading-normal;
-  }
-}
-
-/* Extra-large screen size (xl) and above */
-@media (min-width: 1440px) {
-  .xl\:text-preset-6 {
-    @apply font-bold text-base leading-normal;
-  }
-
-  .xl\:text-preset-7 {
-    @apply font-bold text-lg leading-normal;
-  }
 }
 
 @layer base {
