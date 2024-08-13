@@ -35,6 +35,9 @@ export default {
         1000: '80px',
         1600: '128px',
         1800: '144px'
+      },
+      boxShadow: {
+        card: '0px 25px 50px 0px rgba(6, 22, 141, 0.04)'
       }
     }
   },
