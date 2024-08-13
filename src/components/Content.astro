@@ -1,0 +1,50 @@
+---
+import Highlight from '../components/Highlight.astro';
+import Card from '../components/Card.astro';
+import IconAnimation from '../assets/IconAnimation.astro';
+import IconBusiness from '../assets/IconBusiness.astro';
+import IconCrypt from '../assets/IconCrypt.astro';
+import IconDesign from '../assets/IconDesign.astro';
+import IconPhotography from '../assets/IconPhotography.astro';
+
+const cards = [
+  {
+    component: IconAnimation,
+    headline: 'Animation',
+    text: 'Learn the latest animation techniques to create stunning motion design and captivate your audience.'
+  },
+  {
+    component: IconDesign,
+    headline: 'Design',
+    text: 'Create beautiful, usable interfaces to help shape the future of how the web looks.'
+  },
+  {
+    component: IconPhotography,
+    headline: 'Photography',
+    text: 'Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.'
+  },
+  {
+    component: IconCrypt,
+    headline: 'Crypto',
+    text: 'All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.'
+  },
+  {
+    component: IconBusiness,
+    headline: 'Business',
+    text: 'A step-by-step playbook to help you start, scale, and sustain your business without outside investment.'
+  }
+];
+---
+
+<div
+  class='flex flex-col gap-400 pt-800 pb-1000 px-250 justify-center items-center gradient-white w-full'
+>
+  <Highlight text='Check out our most popular courses!' />
+  {
+    cards.map(({ component: IconComponent, headline, text }) => (
+      <Card headline={headline} text={text}>
+        <IconComponent />
+      </Card>
+    ))
+  }
+</div>

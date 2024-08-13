@@ -1,0 +1,13 @@
+---
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<div
+  class='flex flex-col p-400 self-stretch rounded-2xl gradient-pink shadow-card text-preset-3 text-white'
+>
+  {text}
+</div>

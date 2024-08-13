@@ -1,0 +1,15 @@
+---
+import Button from './Button.astro';
+import LogoLight from '../assets/LogoLight.astro';
+import LogoLightBig from '../assets/LogoLightBig.astro';
+---
+
+<footer class='flex py-300 px-250 self-stretch items-center justify-between bg-blue-900'>
+  <div class='contents xl:hidden'>
+    <LogoLight />
+  </div>
+  <div class='hidden xl:contents'>
+    <LogoLightBig />
+  </div>
+  <Button variant='purple' />
+</footer>
