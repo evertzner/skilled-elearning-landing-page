@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .gradient-pink {
-  @apply bg-gradient-to-b from-[#F02AA6] to-[#FF6F48];
+  @apply bg-gradient-to-b from-[#FF6F48] to-[#F02AA6];
 }
 
 .gradient-purple {
