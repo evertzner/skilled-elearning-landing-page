@@ -4,12 +4,16 @@ import LogoDark from '../assets/LogoDark.astro';
 import LogoDarkBig from '../assets/LogoDarkBig.astro';
 ---
 
-<nav class='flex py-200 md:py-300 px-250 md:px-500 self-stretch items-center justify-between'>
-  <div class='contents xl:hidden'>
-    <LogoDark />
+<nav
+  class='flex py-200 md:py-300 px-250 md:px-500 xl:px-1000 self-stretch items-center justify-center z-10'
+>
+  <div class='flex items-center justify-between max-w-[1120px] w-full'>
+    <div class='contents xl:hidden'>
+      <LogoDark />
+    </div>
+    <div class='hidden xl:contents'>
+      <LogoDarkBig />
+    </div>
+    <Button variant='black' />
   </div>
-  <div class='hidden xl:contents'>
-    <LogoDarkBig />
-  </div>
-  <Button variant='black' />
 </nav>

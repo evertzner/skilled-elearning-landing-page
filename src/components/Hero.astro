@@ -3,35 +3,39 @@ import Button from './Button.astro';
 ---
 
 <div
-  class='flex flex-col md:flex-row py-800 px-250 md:px-550 items-center justify-center self-stretch gap-600 md:gap-300 w-full'
+  class='flex py-800 px-250 md:px-550 xl:px-1000 items-center justify-center self-stretch relative'
 >
-  <div class='flex flex-col items-start gap-500 md:flex-1'>
-    <div class='flex flex-col items-start gap-300'>
-      <h1 class='text-preset-1 text-blue-900'>Maximize skill, minimize budget</h1>
-      <p class='text-preset-5 text-gray-400'>
-        Our modern courses across a range of in-demand skills will give you the knowledge you need
-        to live the life you want.
-      </p>
+  <div
+    class='flex flex-col md:flex-row gap-600 md:gap-300 xl:gap-400 items-center justify-center self-stretch max-w-[1120px] w-full md:h-[400px] xl:h-[560px]'
+  >
+    <div class='flex flex-col items-start gap-500 md:flex-1'>
+      <div class='flex flex-col items-start gap-300'>
+        <h1 class='text-preset-1 text-blue-900'>Maximize skill, minimize budget</h1>
+        <p class='text-preset-5 text-gray-400'>
+          Our modern courses across a range of in-demand skills will give you the knowledge you need
+          to live the life you want.
+        </p>
+      </div>
+      <Button variant='orange' />
     </div>
-    <Button variant='orange' />
+    <div class='flex flex-1 relative'>
+      <picture
+        class='md:absolute md:-top-20 md:-right-80 md:-translate-y-1/2 xl:-top-28 xl:-right-[500px]'
+      >
+        <source
+          media='(max-width: 767px)'
+          srcset='/images/image-hero-mobile.webp 1x, /images/image-hero-mobile@2x.webp 2x'
+        />
+        <source
+          media='(max-width: 1439px)'
+          srcset='/images/image-hero-tablet.webp 1x, /images/image-hero-tablet@2x.webp 2x'
+        />
+        <source
+          media='(min-width: 1440px)'
+          srcset='/images/image-hero-desktop.webp 1x, /images/image-hero-desktop@2x.webp 2x'
+        />
+        <img src='/images/image-hero-mobile.webp' alt='Hero' />
+      </picture>
+    </div>
   </div>
-  <picture class='w-max md:flex-1'>
-    <source
-      media='(max-width: 767px)'
-      srcset='/images/image-hero-mobile.webp 1x, /images/image-hero-mobile@2x.webp 2x'
-    />
-    <source
-      media='(max-width: 1439px)'
-      srcset='/images/image-hero-tablet.webp 1x, /images/image-hero-tablet@2x.webp 2x'
-    />
-    <source
-      media='(min-width: 1440px)'
-      srcset='/images/image-hero-desktop.webp 1x, /images/image-hero-desktop@2x.webp 2x'
-    />
-    <img
-      src='/images/image-hero-mobile.webp'
-      class='md:absolute md:-top-24 md:-right-72'
-      alt='Hero'
-    />
-  </picture>
 </div>

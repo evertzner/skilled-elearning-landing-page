@@ -4,12 +4,16 @@ import LogoLight from '../assets/LogoLight.astro';
 import LogoLightBig from '../assets/LogoLightBig.astro';
 ---
 
-<footer class='flex py-300 px-250 self-stretch items-center justify-between bg-blue-900'>
-  <div class='contents xl:hidden'>
-    <LogoLight />
+<footer
+  class='flex py-300 px-250 md:px-550 xl:px-1000 self-stretch items-center justify-center bg-blue-900'
+>
+  <div class='flex max-w-[1120px] w-full justify-between items-center'>
+    <div class='contents xl:hidden'>
+      <LogoLight />
+    </div>
+    <div class='hidden xl:contents'>
+      <LogoLightBig />
+    </div>
+    <Button variant='purple' />
   </div>
-  <div class='hidden xl:contents'>
-    <LogoLightBig />
-  </div>
-  <Button variant='purple' />
 </footer>
